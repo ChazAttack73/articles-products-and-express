@@ -15,14 +15,15 @@ router.get('/all', function(req,res){
   res.send(products.all());
 });
 
+//updates price and inventory
 router.post('/', function(req,res){
-  // console.log(req.body,res);
   var result = products.add(req.body);
   res.send(result);
 });
 
-router.put('/', function(req,res){
-  res.send('put products');
+router.put('/:id/edit', function(req,res){
+  var result = products.edit(req.body, req.params.id);
+  res.send(result);
 });
 
 router.delete('/', function(req,res){
