@@ -1,12 +1,16 @@
 var express = require('express');
-var router = express.Router();
+var router = express .Router();
+var fs = require('fs');
+var products = require('../db/products.js');
 
 router.get('/', function(req,res){
-  res.send('get products');
+  // console.log(products);
+  // res.send(products.all());
+  res.send(products._all());
 });
 
 router.post('/', function(req,res){
-  res.send('post products');
+  // res.send('post products');
 });
 
 router.put('/', function(req,res){
