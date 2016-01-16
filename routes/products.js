@@ -26,8 +26,9 @@ router.put('/:id/edit', function(req,res){
   res.send(result);
 });
 
-router.delete('/', function(req,res){
-  res.send('delete products');
+router.delete('/:id', function(req,res){
+  var result = products.deleteProduct(req.params.id);
+  res.send(result);
 });
 
 module.exports = router;
