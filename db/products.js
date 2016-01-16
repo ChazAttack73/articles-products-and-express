@@ -42,8 +42,20 @@ module.exports = (function(){
     return { success: false };
   }
 
-  function _deleteProduct(){
-
+  function _deleteProduct(id){
+    var exists = false;
+    var index = 0;
+    for (var i = 0; i < productsArray.length; i++) {
+      if (productsArray[i].id === id){
+        exists = true;
+        index = i;
+      }
+    }
+    if( exists === true ) {
+      productsArray.splice(index, 1);
+      return { success: true };
+    }
+    return { success: false };
   }
 
   function uniqueProd (arr,name){
