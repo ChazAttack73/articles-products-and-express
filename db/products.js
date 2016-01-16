@@ -7,8 +7,19 @@ module.exports = (function(){
     // return 'hello, is it me you are looking for';
   }
 
-  function _add(req,res){
-
+  function _add(req){
+    if( uniqueProd(productsArray,req.name )){
+      var prodEntry = {};
+      prodEntry.name = req.name;
+      prodEntry.price = req.price;
+      prodEntry.inventory = req.inventory;
+      prodEntry.id = prodID;
+        prodID++;
+      productsArray.push(prodEntry);
+      return { success: true };
+    } else {
+      return { success: false };
+    }
   }
 
   function _editByID(){
@@ -17,6 +28,17 @@ module.exports = (function(){
 
   function _deleteProduct(){
 
+  }
+
+  function uniqueProd (arr,name){
+    unique = true;
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i].name === name){
+        console.log('not unique');
+        unique = false;
+      }
+    }
+    return unique;
   }
 
   return {
