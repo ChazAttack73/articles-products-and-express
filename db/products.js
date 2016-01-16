@@ -12,7 +12,7 @@ module.exports = (function(){
       prodEntry.name = req.name;
       prodEntry.price = req.price;
       prodEntry.inventory = req.inventory;
-      prodEntry.id = prodID;
+      prodEntry.id = prodID.toString();
         prodID++;
       productsArray.push(prodEntry);
       return { success: true };
@@ -21,8 +21,25 @@ module.exports = (function(){
     }
   }
 
-  function _editByID(){
-
+  function _editByID(req, id){
+    var exists = false;
+    var index = 0;
+    for (var i = 0; i < productsArray.length; i++) {
+      if (productsArray[i].id === id){
+        exists = true;
+        index = i;
+      }
+    }
+    if( exists === true ) {
+      if( req.price !== undefined ) {
+        productsArray[index].price = req.price;
+      }
+      if( req.inventory !== undefined) {
+        productsArray[index].inventory = req.inventory;
+      }
+      return { success: true };
+    }
+    return { success: false };
   }
 
   function _deleteProduct(){
