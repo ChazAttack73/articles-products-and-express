@@ -4,7 +4,6 @@ module.exports = (function(){
 
   function _all(){
     return productsArray;
-    // return 'hello, is it me you are looking for';
   }
 
   function _add(req){
