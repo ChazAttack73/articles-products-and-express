@@ -1,13 +1,15 @@
 var express = require('express');
-// var server = express();
 var router = express.Router();
 var fs = require('fs');
 var products = require('../db/products.js');
 var bodyParser = require('body-parser');
+
 router.use(bodyParser.urlencoded({extended: true}));
 
 router.get('/', function(req,res){
-  res.send(products.all());
+  res.render( 'products/index', {
+    products: products.all()
+  });
 });
 
 // returns product array
