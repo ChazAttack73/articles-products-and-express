@@ -7,8 +7,8 @@ var bodyParser = require('body-parser');
 router.use(bodyParser.urlencoded({extended: true}));
 
 router.get('/', function(req,res){
-  res.render( 'products/index', {
-    products: products.all()
+  res.render( 'products/index.jade', {
+    "products": products.all()
   });
 });
 
