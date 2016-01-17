@@ -17,13 +17,25 @@ router.get('/all', function(req,res){
   res.send(products.all());
 });
 
+// returns html form to edit items name, price, and inventory
+router.get('/:id/edit', function(req,res){
+  products.getById(req.params.id, function(err,product){
+    if (err) {
+      return res.send({success: false, message: err.message});
+    }
+    res.render( 'products/edit', {
+      "product": product
+    });
+  });
+});
+
 //updates price and inventory
 router.post('/', function(req,res){
   var result = products.add(req.body);
   res.send(result);
 });
 
-router.put('/:id/edit', function(req,res){
+router.put('/:id', function(req,res){
   var result = products.edit(req.body, req.params.id);
   res.send(result);
 });
