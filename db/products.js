@@ -37,6 +37,9 @@ module.exports = (function(){
       if( req.inventory !== undefined) {
         productsArray[index].inventory = req.inventory;
       }
+      if( req.name !== undefined ) {
+        productsArray[index].name = req.name;
+      }
       return { success: true };
     }
     return { success: false };
@@ -62,18 +65,30 @@ module.exports = (function(){
     unique = true;
     for (var i = 0; i < arr.length; i++) {
       if (arr[i].name === name){
-        console.log('not unique');
         unique = false;
       }
     }
     return unique;
   }
 
+  function getSingleItemByID (id,callback){
+    var index = 0;
+    for (var i = 0; i < productsArray.length; i++) {
+      if (productsArray[i].id === id){
+        exists = true;
+        index = i;
+        return callback(null,productsArray[i]);
+      }
+    }
+    return callback(new Error('Cannot find item'));
+  }
+
   return {
     all: _all,
     add: _add,
     edit: _editByID,
-    deleteProduct: _deleteProduct
+    deleteProduct: _deleteProduct,
+    getById: getSingleItemByID
   };
 
 })();
