@@ -1,0 +1,11 @@
+doctype html
+html(lang="en")
+  head
+    title
+  body
+    each product in products
+      h1 #{product.name}
+      ul
+        li price: #{product.price}
+        li inventory: #{product.inventory}
+        li id: #{product.id}
