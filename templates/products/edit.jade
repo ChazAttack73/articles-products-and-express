@@ -1,11 +1,12 @@
 extends ./../layout
 
 block content
-
-  form(action="/products/:id" enctype="application/x-www-form-urlencoded")#form1
+  //- -var overrideID = #{product.name};
+  form(action="/products/#{product.id}" method="POST" enctype="application/x-www-form-urlencoded")#form1
     input(type="hidden" name="_method" value="PUT")
     span Name
     input(type="text" value="#{product.name}" name="name")
+    //- input(type="text" value="#{product.name}" name="name")
     br
     span Price
     input(type='text' value="#{product.price}" name="price")
