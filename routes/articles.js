@@ -13,6 +13,10 @@ router.get('/', function(req,res){
   });
 });
 
+router.get('/all', function(req,res){
+  res.send( articles.all() );
+});
+
 // returns html form to edit items name, price, and inventory
 router.get('/:title/edit', function(req,res){
   articles.getByTitle(req.params.title, function(err,article){
@@ -63,7 +67,10 @@ router.post('/show', function(req,res){
 
 // handles PUT request to update name, price, and inventory
 router.put('/:title/', function(req,res){
-  var result = articles.edit(req.body);
+  console.log(req.params.title);
+  var urlTitle = encodeURIComponent(req.params.title);
+  // var result = articles.edit(req.body);
+  articles.edit(urlTitle, req.body);
   return res.redirect('/articles');
 });
 

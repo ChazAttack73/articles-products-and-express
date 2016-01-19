@@ -19,12 +19,14 @@ module.exports = (function(){
     }
   }
 
-  function _editByTitle(req){
+  function _editByTitle(urlTitle,req){
     var exists = false;
     var index = 0;
+    console.log(urlTitle);
+    console.log(articlesArray[0].urlTitle);
 
     for (var i = 0; i < articlesArray.length; i++) {
-      if (articlesArray[i].urlTitle === req.title){
+      if (articlesArray[i].urlTitle === urlTitle){
         console.log(articlesArray[i].urlTitle);
         console.log(req.title);
 
