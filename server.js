@@ -16,8 +16,11 @@ app.use(methodOverride(function(req,res){
 }));
 
 app.use( '/*', function ( req, res, next ) {
-  var logMessage = '\n\n[Method]: ' + req.method + '\n[URI]: ' + req.params['0'] + '\n[Timestamp]: ' + new Date() + '\n[Headers]: ' + JSON.stringify( req.headers );
-  fs.appendFile( './logs/awesome_traffic_log/traffic.log', logMessage, function ( err ) {
+  var newDate = new Date();
+  var logDate = (newDate.getMonth() + 1) + '-' + newDate.getDate() + '-' + newDate.getFullYear();
+  var logMessage = '\n\n[Method]: ' + req.method + '\n[URI]: ' + req.params['0'] + '\n[Timestamp]: ' + newDate + '\n[Headers]: ' + JSON.stringify( req.headers );
+
+  fs.appendFile( './logs/awesome_traffic_log/' + logDate + '.log', logMessage, function ( err ) {
       if ( err ) console.log ( err );
     });
   next();
