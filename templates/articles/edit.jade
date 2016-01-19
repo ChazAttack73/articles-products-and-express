@@ -1,7 +1,7 @@
 extends ./../layout
 
 block content
-  form(action="/articles/#{article.id}" method="POST" enctype="application/x-www-form-urlencoded")
+  form(action="/articles/#{article.urlTitle}" method="POST" enctype="application/x-www-form-urlencoded")
     input(type="hidden" name="_method" value="PUT")
     span Title &nbsp
     input(type="text" value="#{article.title}" name="title")

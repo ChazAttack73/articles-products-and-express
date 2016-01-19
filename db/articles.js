@@ -1,19 +1,17 @@
 module.exports = (function(){
   var articlesArray = [];
-  var articleID = 1;
 
   function _all(){
     return articlesArray;
   }
 
   function _add(req){
-    if( uniqueArticle(articlesArray,req.title )){
+    if( uniqueArticle( articlesArray,req.title )){
       var articleEntry = {};
       articleEntry.title = req.title;
       articleEntry.author = req.author;
       articleEntry.content = req.content;
-      articleEntry.id = articleID.toString();
-        articleID++;
+      articleEntry.urlTitle = encodeURIComponent(req.title);
       articlesArray.push(articleEntry);
       return { success: true };
     } else {
@@ -21,11 +19,15 @@ module.exports = (function(){
     }
   }
 
-  function _editByID(req, id){
+  function _editByTitle(req){
     var exists = false;
     var index = 0;
+
     for (var i = 0; i < articlesArray.length; i++) {
-      if (articlesArray[i].id === id){
+      if (articlesArray[i].urlTitle === req.title){
+        console.log(articlesArray[i].urlTitle);
+        console.log(req.title);
+
         exists = true;
         index = i;
       }
@@ -40,16 +42,17 @@ module.exports = (function(){
       if( req.title !== undefined ) {
         articlesArray[index].title = req.title;
       }
+      console.log(articlesArray);
       return { success: true };
     }
     return { success: false };
   }
 
-  function _deleteArticle(id){
+  function _deleteArticle(title){
     var exists = false;
     var index = 0;
     for (var i = 0; i < articlesArray.length; i++) {
-      if (articlesArray[i].id === id){
+      if (articlesArray[i].title === title){
         exists = true;
         index = i;
       }
@@ -71,18 +74,6 @@ module.exports = (function(){
     return unique;
   }
 
-  function getSingleArticleByID (id,callback){
-    var index = 0;
-    for (var i = 0; i < articlesArray.length; i++) {
-      if (articlesArray[i].id === id){
-        exists = true;
-        index = i;
-        return callback(null,articlesArray[i]);
-      }
-    }
-    return callback(new Error('Cannot find article'));
-  }
-
   function getSingleArticleByTitle (title,callback){
     var index = 0;
     for (var i = 0; i < articlesArray.length; i++) {
@@ -98,9 +89,8 @@ module.exports = (function(){
   return {
     all: _all,
     add: _add,
-    edit: _editByID,
+    edit: _editByTitle,
     deleteArticle: _deleteArticle,
-    getById: getSingleArticleByID,
     getByTitle: getSingleArticleByTitle
   };
 })();

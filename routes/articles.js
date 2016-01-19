@@ -14,8 +14,8 @@ router.get('/', function(req,res){
 });
 
 // returns html form to edit items name, price, and inventory
-router.get('/:id/edit', function(req,res){
-  articles.getById(req.params.id, function(err,article){
+router.get('/:title/edit', function(req,res){
+  articles.getByTitle(req.params.title, function(err,article){
     if (err) {
       return res.send({success: false, message: err.message});
     }
@@ -25,9 +25,9 @@ router.get('/:id/edit', function(req,res){
   });
 });
 
-// returns html by ID showing current item inventory and price
-router.get('/:id/show', function(req,res){
-    articles.getById(req.params.id, function(err,article){
+// returns html by Title showing current item inventory and price
+router.get('/:title/show', function(req,res){
+    articles.getByTitle(req.params.title, function(err,article){
     if (err) {
       return res.send({success: false, message: err.message});
     }
@@ -47,28 +47,29 @@ router.get('/new', function(req,res){
 // updates price and inventory
 router.post('/', function(req,res){
   var result = articles.add(req.body);
+    //console.log(req.body);
   return res.redirect('/articles');
 });
 
 // helper route to redirect to edit page with user inputted ID
 router.post('/edit', function(req,res){
-  res.redirect('/articles/' + req.body.articleID + '/edit');
+  res.redirect('/articles/' + encodeURIComponent(req.body.title) + '/edit');
 });
 
 // helper route to redirect to show page with user inputted ID
 router.post('/show', function(req,res){
-  res.redirect('/articles/' + req.body.articleID + '/show');
+  res.redirect('/articles/' + encodeURIComponent(req.body.title) + '/show');
 });
 
 // handles PUT request to update name, price, and inventory
-router.put('/:id', function(req,res){
-  var result = articles.edit(req.body, req.params.id);
+router.put('/:title/', function(req,res){
+  var result = articles.edit(req.body);
   return res.redirect('/articles');
 });
 
 // handles DELETE request to remove article from list
 router.delete('/', function(req,res){
-  var result = articles.deleteArticle(req.body.articleID);
+  var result = articles.deleteArticle(req.body.title);
   return res.redirect('/articles');
 });
 
