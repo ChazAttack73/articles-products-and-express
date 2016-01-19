@@ -1,0 +1,28 @@
+extends ./../layout
+
+block content
+  form(action='/articles/new' method='get')
+    input(type='submit' value='Input new article' )
+    br
+  form(action='/articles/edit' method='post' enctype="application/x-www-form-urlencoded")
+    input(type='submit' value='Update article by ID')
+    input(type='text' value='0' name='articleID')
+    br
+  form(action='/articles/show' method='post' enctype="application/x-www-form-urlencoded")
+    input(type='submit' value='Find article by ID')
+    input(type='text' value='0' name='articleID')
+    br
+  form(action='/articles' method='post' enctype="application/x-www-form-urlencoded")
+    input(type="hidden" name="_method" value="DELETE")
+    input(type='submit' value='Delete article by ID')
+    input(type='text' value='0' name='articleID')
+    br
+  - var numberOfArticles = articles.length
+  if numberOfArticles === 0
+    h1 There are currently no articles
+  each article in articles
+    h1 #{article.title}
+    ul
+      li author: #{article.author}
+      li content: #{article.content}
+      li id: #{article.id}

@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var products = require('./routes/products');
-//var articles = require('./routes/articles');
+var articles = require('./routes/articles');
 var methodOverride = require('method-override');
 var bodyParser = require('body-parser');
 var router = express.Router();
@@ -15,7 +15,7 @@ app.use(methodOverride(function(req,res){
 }));
 
 app.use('/products', products);
-//app.use('/articles', articles);
+app.use('/articles', articles);
 
 app.set('view engine', 'jade');
 app.set('views', './templates');

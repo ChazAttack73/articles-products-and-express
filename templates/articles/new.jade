@@ -1,0 +1,15 @@
+extends ./../layout
+
+block content
+  h1 Please enter a new article
+  form(action="/articles" method="POST" enctype="application/x-www-form-urlencoded")
+    span Title &nbsp
+    input(type="text" value="Title" name="title")
+    br
+    span Author &nbsp
+    input(type='text' value="Author" name="author")
+    br
+    span Content &nbsp
+    input(type='text' value="Content" name="content")
+    br
+    input(type='submit' value="Submit")
