@@ -1,6 +1,25 @@
 extends ./../layout
 
 block content
+  form(action='/products/new' method='get')
+    input(type='submit' value='Input new product' )
+    br
+  form(action='/products/edit' method='post' enctype="application/x-www-form-urlencoded")
+    input(type='submit' value='Update product by ID')
+    input(type='text' value='0' name='productID')
+    br
+  form(action='/products/show' method='post' enctype="application/x-www-form-urlencoded")
+    input(type='submit' value='Find product by ID')
+    input(type='text' value='0' name='productID')
+    br
+  form(action='/products' method='post' enctype="application/x-www-form-urlencoded")
+    input(type="hidden" name="_method" value="DELETE")
+    input(type='submit' value='Delete product by ID')
+    input(type='text' value='0' name='productID')
+    br
+  - var inventoryLength = products.length
+  if inventoryLength === 0
+    h1 Current inventory list is empty
   each product in products
     h1 #{product.name}
     ul
