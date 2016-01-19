@@ -5,6 +5,13 @@ var articles = require('../db/articles.js');
 var bodyParser = require('body-parser');
 
 router.use(bodyParser.urlencoded({extended: true}));
+// router.use( '/*', function ( req, res, next ) {
+//   var logMessage = '\n\n[Method]: ' + req.method + '\n[URI]: ' + encodeURIComponent( req.params['0'] ) + '\n[Timestamp]: ' + new Date() + '\n[Headers]: ' + JSON.stringify( req.headers );
+//   fs.appendFile( './logs/articles_log/articles.log', logMessage, function ( err ) {
+//       if ( err ) console.log ( err );
+//     });
+//   next();
+// });
 
 // renders landing page for article entry, updating, search, and removal
 router.get('/', function(req,res){
@@ -51,7 +58,6 @@ router.get('/new', function(req,res){
 // updates price and inventory
 router.post('/', function(req,res){
   var result = articles.add(req.body);
-    //console.log(req.body);
   return res.redirect('/articles');
 });
 
@@ -67,9 +73,7 @@ router.post('/show', function(req,res){
 
 // handles PUT request to update name, price, and inventory
 router.put('/:title/', function(req,res){
-  console.log(req.params.title);
   var urlTitle = encodeURIComponent(req.params.title);
-  // var result = articles.edit(req.body);
   articles.edit(urlTitle, req.body);
   return res.redirect('/articles');
 });
