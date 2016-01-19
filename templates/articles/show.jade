@@ -1,0 +1,11 @@
+extends ./../layout
+
+block content
+  h1 Title: #{article.title}
+  ul
+    li Author: #{article.author}
+    li Content: #{article.content}
+    li ID: #{article.id}
+  form(action='/articles/' method='get')
+    input(type='submit' value='Home' )
+    br
