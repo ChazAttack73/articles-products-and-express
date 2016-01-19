@@ -1,0 +1,11 @@
+extends ./../layout
+
+block content
+  h1 Name: #{product.name}
+  ul
+    li Price: #{product.price}
+    li Inventory: #{product.inventory}
+    li ID: #{product.id}
+  form(action='/products/' method='get')
+    input(type='submit' value='Home' )
+    br
