@@ -5,19 +5,21 @@ var products = require('../db/products.js');
 var bodyParser = require('body-parser');
 
 router.use(bodyParser.urlencoded({extended: true}));
-// router.use( '/*', function ( req, res, next ) {
-//   var logMessage = '\n\n[Method]: ' + req.method + '\n[URI]: ' + encodeURIComponent( req.params['0'] ) + '\n[Timestamp]: ' + new Date() + '\n[Headers]: ' + JSON.stringify( req.headers );
-//   fs.appendFile( './logs/products_log/products.log', logMessage, function ( err ) {
-//       if ( err ) console.log ( err );
-//     });
-//   next();
-// });
 
 // renders landing page for product entry, updating, search, and removal
 router.get('/', function(req,res){
-  res.render( 'products/index.jade', {
-    "products": products.all()
-  });
+  products.all()
+    .then( function ( data ) {
+      // success;
+      productsArray = data;
+      res.render( 'products/index.jade', {
+        "products": productsArray
+      });
+    })
+    .catch( function ( error ) {
+    // error;
+    console.log( error );
+    });
 });
 
 // returns html form to edit items name, price, and inventory
