@@ -1,13 +1,13 @@
-var express = require('express');
+var express = require( 'express' );
 var router = express.Router();
-var fs = require('fs');
-var products = require('../db/products.js');
-var bodyParser = require('body-parser');
+var fs = require( 'fs' );
+var products = require( '../db/products.js' );
+var bodyParser = require( 'body-parser' );
 
-router.use(bodyParser.urlencoded({extended: true}));
+router.use( bodyParser.urlencoded( {extended: true} ) );
 
 // renders landing page for product entry, updating, search, and removal
-router.get('/', function(req,res){
+router.get( '/', function ( req, res ) {
   products.all()
     .then( function ( data ) {
       // success;
@@ -17,16 +17,16 @@ router.get('/', function(req,res){
       });
     })
     .catch( function ( error ) {
-    // error;
-    console.log( error );
+      // error;
+      console.log( error );
     });
 });
 
 // returns html form to edit items name, price, and inventory
-router.get('/:id/edit', function(req,res){
-  products.getById(req.params.id, function(err,product){
-    if (err) {
-      return res.send({success: false, message: err.message});
+router.get( '/:id/edit', function ( req, res ) {
+  products.getById( req.params.id, function ( err, product ) {
+    if ( err ) {
+      return res.send( { success: false, message: err.message } );
     }
     res.render( 'products/edit', {
       "product": product
@@ -35,10 +35,10 @@ router.get('/:id/edit', function(req,res){
 });
 
 // returns html by ID showing current item inventory and price
-router.get('/:id/show', function(req,res){
-    products.getById(req.params.id, function(err,product){
-    if (err) {
-      return res.send({success: false, message: err.message});
+router.get( '/:id/show', function ( req, res ) {
+    products.getById( req.params.id, function ( err, product ) {
+    if ( err ) {
+      return res.send( { success: false, message: err.message } );
     }
     res.render( 'products/show', {
       "product": product
@@ -47,38 +47,41 @@ router.get('/:id/show', function(req,res){
 });
 
 // returns html form to add new item
-router.get('/new', function(req,res){
-    res.render( 'products/new', {
-      'products': products.all()
-    });
+router.get( '/new', function ( req, res ){
+  res.render( 'products/new', {
+    'products': products.all()
+  });
 });
 
 // updates price and inventory
-router.post('/', function(req,res){
-  var result = products.add(req.body);
-  return res.redirect('/products');
+router.post( '/', function ( req, res ){
+  products.add( req.body  )
+    .then( function () {
+      return res.redirect( '/products' );
+    })
+    .catch( function ( error ) {
+      console.error( error );
+    });
 });
 
 // helper route to redirect to edit page with user inputted ID
-router.post('/edit', function(req,res){
-  res.redirect('/products/' + req.body.productID + '/edit');
+router.post( '/edit', function ( req, res ) {
+  res.redirect( '/products/' + req.body.productID + '/edit' );
 });
 
 // helper route to redirect to show page with user inputted ID
-router.post('/show', function(req,res){
-  res.redirect('/products/' + req.body.productID + '/show');
+router.post( '/show', function ( req, res ) {
+  res.redirect( '/products/' + req.body.productID + '/show' );
 });
 
 // handles PUT request to update name, price, and inventory
-router.put('/:id', function(req,res){
-  var result = products.edit(req.body, req.params.id);
-  return res.redirect('/products');
+router.put( '/:id', function ( req, res ) {
+  return res.redirect( '/products' );
 });
 
 // handles DELETE request to remove product from list
-router.delete('/', function(req,res){
-  var result = products.deleteProduct(req.body.productID);
-  return res.redirect('/products');
+router.delete( '/', function ( req, res ) {
+  return res.redirect( '/products' );
 });
 
 module.exports = router;
