@@ -1,9 +1,22 @@
 module.exports = (function(){
-  var productsArray = [];
   var prodID = 1;
 
-  function _all(){
-    return productsArray;
+  var promise = require( 'bluebird' );
+  var options = {
+    promiseLib : promise
+  };
+  var pgp = require( 'pg-promise' )( options );
+  var cn = {
+    host : 'localhost',
+    port : 5432,
+    database : 'products_and_articles',
+    user : 'postgres',
+    password : 'postgres'
+  };
+  var db = pgp( cn );
+
+  function _all () {
+    return db.query( "SELECT * FROM product_list", true );
   }
 
   function _add(req){
