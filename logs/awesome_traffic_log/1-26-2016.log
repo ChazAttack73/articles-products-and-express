@@ -1,0 +1,341 @@
+
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 09:21:23 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"508-28HCiugcSLGoXha0INjyUA\""}
+
+[Method]: GET
+[URI]: favicon.ico
+[Timestamp]: Tue Jan 26 2016 09:21:25 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","accept":"*/*","referer":"http://localhost:3000/products","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products/new
+[Timestamp]: Tue Jan 26 2016 09:40:40 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8"}
+
+[Method]: POST
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 09:48:33 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","content-length":"49","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","origin":"http://localhost:3000","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","content-type":"application/x-www-form-urlencoded","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate","accept-language":"en-US,en;q=0.8"}
+
+[Method]: POST
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 09:50:51 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","content-length":"49","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","origin":"http://localhost:3000","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","content-type":"application/x-www-form-urlencoded","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate","accept-language":"en-US,en;q=0.8"}
+
+[Method]: POST
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 09:51:04 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","content-length":"49","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","origin":"http://localhost:3000","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","content-type":"application/x-www-form-urlencoded","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate","accept-language":"en-US,en;q=0.8"}
+
+[Method]: POST
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 09:51:08 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","content-length":"49","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","origin":"http://localhost:3000","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","content-type":"application/x-www-form-urlencoded","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products/new
+[Timestamp]: Tue Jan 26 2016 09:51:13 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products/
+[Timestamp]: Tue Jan 26 2016 09:51:13 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products/
+[Timestamp]: Tue Jan 26 2016 09:52:22 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"508-28HCiugcSLGoXha0INjyUA\""}
+
+[Method]: GET
+[URI]: products/new
+[Timestamp]: Tue Jan 26 2016 09:52:23 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"1c8-HBv2WJc6bqm/n7IVXlYUrg\""}
+
+[Method]: POST
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 09:52:37 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","content-length":"49","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","origin":"http://localhost:3000","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","content-type":"application/x-www-form-urlencoded","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 09:52:37 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 09:53:21 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"no-cache","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","postman-token":"1dfa7c35-d6a0-d555-978d-ecdd27755907","accept":"*/*","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 09:55:46 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"508-28HCiugcSLGoXha0INjyUA\""}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 09:56:03 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"566-6PjE8ofmPEo6BvtkAlWqPg\""}
+
+[Method]: GET
+[URI]: products/new
+[Timestamp]: Tue Jan 26 2016 09:56:21 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"1c8-HBv2WJc6bqm/n7IVXlYUrg\""}
+
+[Method]: POST
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 09:56:40 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","content-length":"44","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","origin":"http://localhost:3000","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","content-type":"application/x-www-form-urlencoded","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 09:56:40 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 09:56:44 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"566-6PjE8ofmPEo6BvtkAlWqPg\""}
+
+[Method]: GET
+[URI]: products/new
+[Timestamp]: Tue Jan 26 2016 10:01:33 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"1c8-HBv2WJc6bqm/n7IVXlYUrg\""}
+
+[Method]: GET
+[URI]: products/new
+[Timestamp]: Tue Jan 26 2016 10:02:08 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"1c8-HBv2WJc6bqm/n7IVXlYUrg\""}
+
+[Method]: GET
+[URI]: products/
+[Timestamp]: Tue Jan 26 2016 10:02:09 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"508-28HCiugcSLGoXha0INjyUA\""}
+
+[Method]: GET
+[URI]: products/new
+[Timestamp]: Tue Jan 26 2016 10:02:15 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products/new
+[Timestamp]: Tue Jan 26 2016 10:04:21 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products/
+[Timestamp]: Tue Jan 26 2016 10:04:21 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"5bf-pkfg18iZaoSBIXfgDMALfA\""}
+
+[Method]: GET
+[URI]: products/new
+[Timestamp]: Tue Jan 26 2016 10:04:25 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8"}
+
+[Method]: POST
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:05:01 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","content-length":"42","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","origin":"http://localhost:3000","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","content-type":"application/x-www-form-urlencoded","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:05:01 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:05:07 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"5bf-pkfg18iZaoSBIXfgDMALfA\""}
+
+[Method]: GET
+[URI]: products/new
+[Timestamp]: Tue Jan 26 2016 10:08:06 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"1c8-HBv2WJc6bqm/n7IVXlYUrg\""}
+
+[Method]: POST
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:08:32 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","content-length":"42","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","origin":"http://localhost:3000","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","content-type":"application/x-www-form-urlencoded","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate","accept-language":"en-US,en;q=0.8"}
+
+[Method]: POST
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:09:59 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","content-length":"42","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","origin":"http://localhost:3000","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","content-type":"application/x-www-form-urlencoded","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products/new
+[Timestamp]: Tue Jan 26 2016 10:10:07 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"1c8-HBv2WJc6bqm/n7IVXlYUrg\""}
+
+[Method]: POST
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:10:22 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","content-length":"38","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","origin":"http://localhost:3000","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","content-type":"application/x-www-form-urlencoded","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate","accept-language":"en-US,en;q=0.8"}
+
+[Method]: POST
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:12:36 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","content-length":"38","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","origin":"http://localhost:3000","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","content-type":"application/x-www-form-urlencoded","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:12:56 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"616-TOjVjmab7v9OPA5wCR6UYg\""}
+
+[Method]: GET
+[URI]: products/new
+[Timestamp]: Tue Jan 26 2016 10:13:22 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"1c8-HBv2WJc6bqm/n7IVXlYUrg\""}
+
+[Method]: POST
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:13:52 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","content-length":"49","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","origin":"http://localhost:3000","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","content-type":"application/x-www-form-urlencoded","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate","accept-language":"en-US,en;q=0.8"}
+
+[Method]: POST
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:14:38 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","content-length":"49","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","origin":"http://localhost:3000","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","content-type":"application/x-www-form-urlencoded","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:15:23 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"no-cache","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","postman-token":"eced8802-2c6f-c581-d2de-141e32e78934","accept":"*/*","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8"}
+
+[Method]: POST
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:15:58 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","content-length":"29","cache-control":"no-cache","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","content-type":"application/x-www-form-urlencoded","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","postman-token":"c480f656-6a35-12f0-e5ef-ebe77db6c5e3","accept":"*/*","accept-encoding":"gzip, deflate","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:16:32 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"508-28HCiugcSLGoXha0INjyUA\""}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:16:35 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"508-28HCiugcSLGoXha0INjyUA\""}
+
+[Method]: GET
+[URI]: products/new
+[Timestamp]: Tue Jan 26 2016 10:16:37 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"1c8-HBv2WJc6bqm/n7IVXlYUrg\""}
+
+[Method]: POST
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:16:45 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","content-length":"49","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","origin":"http://localhost:3000","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","content-type":"application/x-www-form-urlencoded","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:16:45 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:16:52 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"508-28HCiugcSLGoXha0INjyUA\""}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:16:55 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"508-28HCiugcSLGoXha0INjyUA\""}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:16:55 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"508-28HCiugcSLGoXha0INjyUA\""}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:16:56 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"508-28HCiugcSLGoXha0INjyUA\""}
+
+[Method]: GET
+[URI]: products/new
+[Timestamp]: Tue Jan 26 2016 10:19:11 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"1c8-HBv2WJc6bqm/n7IVXlYUrg\""}
+
+[Method]: GET
+[URI]: products/new
+[Timestamp]: Tue Jan 26 2016 10:19:40 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8"}
+
+[Method]: POST
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:19:52 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","content-length":"37","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","origin":"http://localhost:3000","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","content-type":"application/x-www-form-urlencoded","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:19:52 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:19:56 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"508-28HCiugcSLGoXha0INjyUA\""}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:19:58 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"508-28HCiugcSLGoXha0INjyUA\""}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:20:00 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"508-28HCiugcSLGoXha0INjyUA\""}
+
+[Method]: GET
+[URI]: products/new
+[Timestamp]: Tue Jan 26 2016 10:20:23 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"1c8-HBv2WJc6bqm/n7IVXlYUrg\""}
+
+[Method]: POST
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:20:31 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","content-length":"37","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","origin":"http://localhost:3000","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","content-type":"application/x-www-form-urlencoded","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 10:44:42 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"508-28HCiugcSLGoXha0INjyUA\""}
+
+[Method]: GET
+[URI]: products/new
+[Timestamp]: Tue Jan 26 2016 10:48:44 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"1c8-HBv2WJc6bqm/n7IVXlYUrg\""}
+
+[Method]: GET
+[URI]: products/new
+[Timestamp]: Tue Jan 26 2016 10:50:21 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"1c8-HBv2WJc6bqm/n7IVXlYUrg\""}
+
+[Method]: POST
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 11:00:09 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","content-length":"41","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","origin":"http://localhost:3000","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","content-type":"application/x-www-form-urlencoded","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 11:00:09 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products/new
+[Timestamp]: Tue Jan 26 2016 11:04:23 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8","if-none-match":"W/\"1c8-HBv2WJc6bqm/n7IVXlYUrg\""}
+
+[Method]: POST
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 11:04:38 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","content-length":"49","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","origin":"http://localhost:3000","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","content-type":"application/x-www-form-urlencoded","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate","accept-language":"en-US,en;q=0.8"}
+
+[Method]: GET
+[URI]: products
+[Timestamp]: Tue Jan 26 2016 11:04:38 GMT-1000 (HST)
+[Headers]: {"host":"localhost:3000","connection":"keep-alive","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36","referer":"http://localhost:3000/products/new?","accept-encoding":"gzip, deflate, sdch","accept-language":"en-US,en;q=0.8"}
