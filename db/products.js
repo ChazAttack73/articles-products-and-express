@@ -1,4 +1,4 @@
-module.exports = (function(){
+module.exports = ( function () {
   var prodID = 1;
 
   var promise = require( 'bluebird' );
@@ -15,24 +15,16 @@ module.exports = (function(){
   };
   var db = pgp( cn );
 
+
   function _all () {
     return db.query( "SELECT * FROM product_list", true );
   }
 
-  function _add(req){
-    if( uniqueProd(productsArray,req.name )){
-      var prodEntry = {};
-      prodEntry.name = req.name;
-      prodEntry.price = req.price;
-      prodEntry.inventory = req.inventory;
-      prodEntry.id = prodID.toString();
-        prodID++;
-      productsArray.push(prodEntry);
-      return { success: true };
-    } else {
-      return { success: false };
+  function _add ( req ){
+    return db.none(
+      "INSERT INTO product_list ( name, price, inventory ) VALUES ( $1, $2, $3 )",
+      [ req.name, req.price, req.inventory ] );
     }
-  }
 
   function _editByID(req, id){
     var exists = false;
@@ -72,16 +64,6 @@ module.exports = (function(){
       return { success: true };
     }
     return { success: false };
-  }
-
-  function uniqueProd (arr,name){
-    unique = true;
-    for (var i = 0; i < arr.length; i++) {
-      if (arr[i].name === name){
-        unique = false;
-      }
-    }
-    return unique;
   }
 
   function getSingleItemByID (id,callback){
