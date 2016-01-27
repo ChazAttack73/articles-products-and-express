@@ -10,28 +10,27 @@ router.use( bodyParser.urlencoded( {extended: true} ) );
 router.get( '/', function ( req, res ) {
   products.all()
     .then( function ( data ) {
-      // success;
       productsArray = data;
       res.render( 'products/index.jade', {
         "products": productsArray
       });
     })
     .catch( function ( error ) {
-      // error;
       console.log( error );
     });
 });
 
 // returns html form to edit items name, price, and inventory
 router.get( '/:id/edit', function ( req, res ) {
-  products.getById( req.params.id, function ( err, product ) {
-    if ( err ) {
-      return res.send( { success: false, message: err.message } );
-    }
-    res.render( 'products/edit', {
-      "product": product
+  products.getById( req.params.id )
+    .then( function ( data ) {
+      res.render( 'products/edit', {
+        "product": data[0]
+      });
+    })
+    .catch( function () {
+      console.log( error );
     });
-  });
 });
 
 // returns html by ID showing current item inventory and price
@@ -76,7 +75,13 @@ router.post( '/show', function ( req, res ) {
 
 // handles PUT request to update name, price, and inventory
 router.put( '/:id', function ( req, res ) {
-  return res.redirect( '/products' );
+  products.edit( req.body, req.params.id )
+    .then( function () {
+      res.redirect( '/products' );
+    })
+    .catch( function () {
+      console.log( error );
+    });
 });
 
 // handles DELETE request to remove product from list
