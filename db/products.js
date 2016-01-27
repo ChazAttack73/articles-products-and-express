@@ -16,38 +16,28 @@ module.exports = ( function () {
   var db = pgp( cn );
 
 
+
   function _all () {
-    return db.query( "SELECT * FROM product_list", true );
+    return db.query( "SELECT * FROM product_list" );
   }
 
-  function _add ( req ){
+  function _add ( req ) {
     return db.none(
-      "INSERT INTO product_list ( name, price, inventory ) VALUES ( $1, $2, $3 )",
-      [ req.name, req.price, req.inventory ] );
-    }
+      "INSERT INTO product_list ( name, price, inventory )" +
+      "VALUES ( $1, $2, $3 )",
+      [ req.name, req.price, req.inventory ]
+    );
+  }
 
-  function _editByID(req, id){
-    var exists = false;
-    var index = 0;
-    for (var i = 0; i < productsArray.length; i++) {
-      if (productsArray[i].id === id){
-        exists = true;
-        index = i;
-      }
-    }
-    if( exists === true ) {
-      if( req.price !== undefined ) {
-        productsArray[index].price = req.price;
-      }
-      if( req.inventory !== undefined) {
-        productsArray[index].inventory = req.inventory;
-      }
-      if( req.name !== undefined ) {
-        productsArray[index].name = req.name;
-      }
-      return { success: true };
-    }
-    return { success: false };
+  function _getById ( id ) {
+    return db.query( "SELECT * FROM product_list WHERE id=$1", id );
+  }
+
+  function _editByID ( req, id ) {
+    return db.query(
+      "UPDATE product_list SET name=$1, price=$2, inventory=$3 WHERE id=$4",
+      [ req.name, req.price, req.inventory, id ]
+    );
   }
 
   function _deleteProduct(id){
@@ -66,24 +56,12 @@ module.exports = ( function () {
     return { success: false };
   }
 
-  function getSingleItemByID (id,callback){
-    var index = 0;
-    for (var i = 0; i < productsArray.length; i++) {
-      if (productsArray[i].id === id){
-        exists = true;
-        index = i;
-        return callback(null,productsArray[i]);
-      }
-    }
-    return callback(new Error('Cannot find item'));
-  }
-
   return {
     all: _all,
     add: _add,
+    getById: _getById,
     edit: _editByID,
     deleteProduct: _deleteProduct,
-    getById: getSingleItemByID
   };
 
 })();
