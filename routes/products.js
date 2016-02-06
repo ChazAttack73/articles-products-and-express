@@ -35,14 +35,15 @@ router.get( '/:id/edit', function ( req, res ) {
 
 // returns html by ID showing current item inventory and price
 router.get( '/:id/show', function ( req, res ) {
-    products.getById( req.params.id, function ( err, product ) {
-    if ( err ) {
-      return res.send( { success: false, message: err.message } );
-    }
-    res.render( 'products/show', {
-      "product": product
+    products.getById( req.params.id )
+    .then( function ( data ) {
+      res.render( 'products/show', {
+        "product": data[0]
+      });
+    })
+    .catch( function () {
+      console.log( error );
     });
-  });
 });
 
 // returns html form to add new item
